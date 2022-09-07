@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var t=require("react/jsx-runtime"),e=function(e){var r=e.text,n=e.text2,u=e.text3;return t.jsxs("button",{children:[r," ",n," ",u]})};exports.Button=e;

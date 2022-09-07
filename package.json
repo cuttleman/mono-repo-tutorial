@@ -2,11 +2,16 @@
   "name": "monorepo-test-test",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:module_a": "yarn workspace module_a build",
+    "start:storybook": "yarn workspace module_a start"
   },
   "dependencies": {
     "next": "12.2.5",
@@ -14,11 +19,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.5.0",
     "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
+    "lerna": "^5.0.0",
     "typescript": "4.8.2"
   }
 }
